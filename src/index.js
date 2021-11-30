@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import CouterApp from './CounterApp';
+import CouterApp from './PrimerApp';
 
 import './index.css';
 
