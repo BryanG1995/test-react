@@ -1,9 +1,17 @@
 import React from "react";
 
-const CouterApp = () => {
+const PrimerApp = () => {
 
-    return <h1>Hola Mundo</h1>;
+    const saludar = 'Hola Mundo, y la wea';
+    //${hola}
+    return ( 
+        <>
+        <h1>{saludar}</h1>
+        <p>chao hermanito</p>
+        </>
+        )
+    ;
 
 };
 
-export default CouterApp;
+export default PrimerApp;
