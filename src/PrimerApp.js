@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 
-const PrimerApp = () => {
+const PrimerApp = ({nombre}) => {
 
-    const saludar = 'Hola Mundo, y la wea';
+    const [primera, setPrimera] = useState(0)
+
+   // https://es.reactjs.org/docs/hooks-overview.html
     //${hola}
+    const incrementoNumero = (e) =>{
+        setPrimera(primera + 1);
+        console.log(primera);
+        
+    }
+    
+
     return ( 
         <>
-        <h1>{saludar}</h1>
-        <p>chao hermanito</p>
+        <h1>{nombre}</h1>
+        <p>{primera}</p>
+        <button onClick={(event) => incrementoNumero(event)}>Hola 1</button>
         </>
         )
     ;
